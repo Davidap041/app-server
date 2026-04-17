@@ -11,11 +11,11 @@
       "iconURL": "https://davidap041.github.io/app-server/icon.png",
       "versions": [
         {
-          "version": "1.0",
+          "version": "1.0.2",
           "date": "2026-04-17",
           "downloadURL": "https://davidap041.github.io/app-server/Supermercado.ipa",
-          "size": 146494,
-          "localizedDescription": "Build: adiciona submódulo app-server ao repositório\n"
+          "size": 147741,
+          "localizedDescription": "Build: feat: add plist\n"
         }
       ]
     }
