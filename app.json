@@ -1,5 +1,5 @@
 {
-  "name": "Supermercado App",
+  "name": "My Personal APPs",
   "identifier": "br.paiva.server",
   "sourceURL": "https://davidap041.github.io/app-server/app.json",
   "apps": [
@@ -14,8 +14,8 @@
           "version": "1.0.4",
           "date": "2026-04-17",
           "downloadURL": "https://davidap041.github.io/app-server/Supermercado.ipa",
-          "size": 2490636,
-          "localizedDescription": "Build: feat: add icon\n"
+          "size": 2490638,
+          "localizedDescription": "Build: fix: atualizar versão do projeto para 9 e ajustar lanes no Fastlane\n"
         }
       ]
     }
