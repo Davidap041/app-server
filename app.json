@@ -1,19 +1,19 @@
 {
   "name": "Supermercado App",
   "identifier": "br.paiva.server",
-  "sourceURL": "https://davidap041.github.io/app-server/apps.json",
+  "sourceURL": "https://davidap041.github.io/app-server/app.json",
   "apps": [
     {
       "name": "Supermercado",
       "bundleIdentifier": "br.paiva.Supermercado",
       "developerName": "Davi Alexandre Paiva",
       "localizedDescription": "App gestão de compras",
-      "iconURL": "https://davidap041.github.io/server/icon.png",
+      "iconURL": "https://davidap041.github.io/app-server/icon.png",
       "versions": [
         {
           "version": "1.0",
           "date": "2026-04-17",
-          "downloadURL": "https://davidap041.github.io/server/app.ipa",
+          "downloadURL": "https://davidap041.github.io/app-server/app.ipa",
           "size": 12345678,
           "localizedDescription": "Versão inicial"
         }
