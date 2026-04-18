@@ -11,11 +11,11 @@
       "iconURL": "https://davidap041.github.io/app-server/icon.png",
       "versions": [
         {
-          "version": "1.0.4",
+          "version": "1.0.8",
           "date": "2026-04-18",
           "downloadURL": "https://davidap041.github.io/app-server/Supermercado.ipa",
           "size": 2499470,
-          "localizedDescription": "Build: fix increase version\n"
+          "localizedDescription": "Build: feat: new alerts in fastlane\n"
         }
       ]
     }
