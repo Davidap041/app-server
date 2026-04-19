@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.0.0",
+          "version": "1.0.2",
           "date": "2026-04-19",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 2502684,
-          "localizedDescription": "Build: feat: suport iOS 17\n"
+          "size": 597808,
+          "localizedDescription": "Build: feat: add fastlane\n"
         }
       ]
     }
