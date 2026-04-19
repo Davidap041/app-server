@@ -18,6 +18,22 @@
           "localizedDescription": "Build: feat: suport iOS 17\n"
         }
       ]
+    },
+    {
+      "name": "FinancialApp",
+      "bundleIdentifier": "br.paiva.FinancialApp",
+      "developerName": "Davi Alexandre Paiva",
+      "localizedDescription": "App gestão de contas",
+      "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-04-19",
+          "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
+          "size": 2502684,
+          "localizedDescription": "Build: feat: suport iOS 17\n"
+        }
+      ]
     }
   ]
 }
