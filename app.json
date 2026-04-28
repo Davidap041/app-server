@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.1.0",
-          "date": "2026-04-19",
+          "version": "1.1.1",
+          "date": "2026-04-27",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 597806,
-          "localizedDescription": "Build: feat: update deploy\n"
+          "size": 609764,
+          "localizedDescription": "Build: Refactor transaction handling and persistence\n\n- Introduced new `TransactionResponse` and `FetchTransactionsResponse` models to standardize transaction data handling.\n- Replaced the old `TransactionRepository` with `TransactionNetworkRepository` for improved network operations.\n- Added `Wallet` and `WalletEntity` models to manage wallet data.\n- Created `CategoryCoreDataRepository` for category management with Core Data.\n- Implemented `HandleTransactionViewController` for transaction creation and editing.\n- Updated `TransactionViewModel` to handle transactions more effectively.\n- Refactored `TransactionViewCell` to use the new transaction model.\n- Enhanced UI with a new plus button for adding transactions.\n- Removed deprecated Core Data model files and updated persistence logic.\n"
         }
       ]
     }
