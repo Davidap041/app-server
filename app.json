@@ -11,11 +11,11 @@
       "iconURL": "https://davidap041.github.io/app-server/Supermercado.png",
       "versions": [
         {
-          "version": "1.3.0",
-          "date": "2026-04-21",
+          "version": "1.3.1",
+          "date": "2026-05-21",
           "downloadURL": "https://davidap041.github.io/app-server/Supermercado.ipa",
-          "size": 2531467,
-          "localizedDescription": "Build: feat: multiple lists\n"
+          "size": 2544888,
+          "localizedDescription": "Build: deploy app for version 1.3.0\n"
         }
       ]
     },
