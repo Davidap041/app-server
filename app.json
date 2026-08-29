@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.2.0",
+          "version": "1.2.1",
           "date": "2026-08-29",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1793062,
-          "localizedDescription": "Build: feat: Implement bill update and delete functionality, enhance Bill and Transaction view controllers\n"
+          "size": 1794315,
+          "localizedDescription": "Build: deploy app for version 1.2.0\n"
         }
       ]
     }
