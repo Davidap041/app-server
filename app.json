@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.4.0",
-          "date": "2026-08-29",
+          "version": "1.5.0",
+          "date": "2026-08-30",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1797232,
-          "localizedDescription": "Build: feat: Integrate Supabase configuration and enhance crash reporting setup\n"
+          "size": 1808997,
+          "localizedDescription": "Build: feat: Implement authentication flow with Supabase integration and user management\n"
         }
       ]
     }
