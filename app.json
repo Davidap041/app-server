@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.6.1",
-          "date": "2026-09-08",
+          "version": "1.7.0",
+          "date": "2026-09-09",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1820380,
-          "localizedDescription": "Build: Refactor Bill and Transaction View Controllers to use custom text fields for date and options selection\n\n- Replaced UIDatePicker and UIButton with DatePickerTextField and OptionsPickerTextField in HandleBillViewController and HandleTransactionViewController for better keyboard navigation.\n- Updated the setup methods to refresh options for categories and wallets.\n- Improved keyboard toolbar functionality to include dynamic accessory buttons based on field state.\n- Added new components: DatePickerTextField and OptionsPickerTextField for enhanced user experience.\n- Adjusted the layout and order of fields in the table view for better usability.\n- Updated TODO.md to reflect completed tasks related to the new implementations.\n"
+          "size": 1977699,
+          "localizedDescription": "Build: feat: integracao Pluggy Open Finance (aba Banco, Edge Functions, adapter)\n\nAba \"Banco\" que conecta contas via Pluggy Connect (widget WKWebView) e\nimporta transacoes para a tabela `transaction` do app.\n\nBackend (supabase/):\n- Edge Function pluggy-webhook: recebe eventos, responde 2XX rapido e\n  sincroniza item/contas/transacoes via API da Pluggy (GET /v2/transactions\n  com paginacao por cursor). Tabelas pluggy_* com RLS; grants explicitos\n  para service_role; policies de SELECT para authenticated + is_approved().\n- Edge Function pluggy-connect-token: troca clientId/clientSecret ->\n  connectToken no servidor (verify_jwt + is_approved()). As credenciais da\n  Pluggy e o segredo do webhook ficam so em `supabase secrets` — nada de\n  PLUGGY_* vai no app (Info.plist / Environment / xcconfig limpos).\n- security_check.sql: audita RLS/grants/is_approved() (read-only).\n\nApp:\n- BankConnectViewModel chama functions.invoke(\"pluggy-connect-token\").\n- Adapter Pluggy -> Domain (FinancialApp/Services/Pluggy/Adapter/):\n  PluggyTransaction (DTO), PluggyTransactionMapper (description->title,\n  amount->value com sinal cru, date tz-aware, categoria \"Open Finance\"\n  resolvida por titulo, id = transactionId para idempotencia),\n  PluggySyncService (le pluggy_transaction, pula ja importadas, insere).\n- Import disparado no onItemCreated e no pull-to-refresh da lista.\n- FinancialAppCLI: alvo de teste local que mantem o PluggyClient nativo\n  (removido do target do app).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_016nJZ3NtuKQ32RSmhNTDnfo\n"
         }
       ]
     }
