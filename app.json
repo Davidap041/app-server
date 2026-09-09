@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.6.0",
+          "version": "1.6.1",
           "date": "2026-09-08",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1817394,
-          "localizedDescription": "Build: feat: Ajustes de UI/UX em contas e transações + suporte a Mac Catalyst\n\n- Exclusão de conta/transação agora usa apenas o popup de confirmação,\n  removendo a tela de detalhe em modo \"isDeleting\"\n- Linha \"Fechamento\" só aparece quando a conta está vinculada a uma carteira\n- Toque fora dos campos fecha o teclado (HandleBill/HandleTransaction)\n- Tabela acompanha o topo do teclado via keyboardLayoutGuide, rolando por inteiro\n- Adiciona entitlements e build settings para Mac Catalyst (App Sandbox)\n- Nova lane fastlane install_mac_lane para build/instalação local no Mac\n- Atualiza TODO.md\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QWYfzUZ5QwMDmJHEQMQqNW\n"
+          "size": 1820380,
+          "localizedDescription": "Build: Refactor Bill and Transaction View Controllers to use custom text fields for date and options selection\n\n- Replaced UIDatePicker and UIButton with DatePickerTextField and OptionsPickerTextField in HandleBillViewController and HandleTransactionViewController for better keyboard navigation.\n- Updated the setup methods to refresh options for categories and wallets.\n- Improved keyboard toolbar functionality to include dynamic accessory buttons based on field state.\n- Added new components: DatePickerTextField and OptionsPickerTextField for enhanced user experience.\n- Adjusted the layout and order of fields in the table view for better usability.\n- Updated TODO.md to reflect completed tasks related to the new implementations.\n"
         }
       ]
     }
