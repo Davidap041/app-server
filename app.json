@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.5.1",
-          "date": "2026-08-30",
+          "version": "1.6.0",
+          "date": "2026-09-08",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1808994,
-          "localizedDescription": "Build: fix: Update CFBundleDisplayName to 'FinancialApp' in Info.plist\n"
+          "size": 1817394,
+          "localizedDescription": "Build: feat: Ajustes de UI/UX em contas e transações + suporte a Mac Catalyst\n\n- Exclusão de conta/transação agora usa apenas o popup de confirmação,\n  removendo a tela de detalhe em modo \"isDeleting\"\n- Linha \"Fechamento\" só aparece quando a conta está vinculada a uma carteira\n- Toque fora dos campos fecha o teclado (HandleBill/HandleTransaction)\n- Tabela acompanha o topo do teclado via keyboardLayoutGuide, rolando por inteiro\n- Adiciona entitlements e build settings para Mac Catalyst (App Sandbox)\n- Nova lane fastlane install_mac_lane para build/instalação local no Mac\n- Atualiza TODO.md\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01QWYfzUZ5QwMDmJHEQMQqNW\n"
         }
       ]
     }
