@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.8.0",
+          "version": "1.8.1",
           "date": "2026-09-10",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 2059981,
-          "localizedDescription": "Build: feat: planejamento por categoria, barra de resumo do mes e filtros por chip\n\n- Planejamento mensal por categoria (planned_amount): telas de planejamento\n  e de detalhe do mes, RingGaugeView, Category.plannedAmount + CategoryDTO\n- MonthSummaryView: resumo do recorte acima da lista\n  (entradas/saidas/saldo em Transacoes; real/estimado/diferenca em Contas)\n- ChipFilterBar: filtro por categoria e por carteira na aba Transacoes\n- Contas: composicao do valor real expansivel inline na celula\n- Ajustes nos adapters Pluggy (alias de categoria/carteira) e no Bank connect\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01N3qFQfQgFNddcutD1enfKG\n"
+          "size": 2086481,
+          "localizedDescription": "Build: deploy app for version 1.8.0\n"
         }
       ]
     }
