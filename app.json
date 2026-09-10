@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.7.0",
-          "date": "2026-09-09",
+          "version": "1.8.0",
+          "date": "2026-09-10",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 1977699,
-          "localizedDescription": "Build: feat: integracao Pluggy Open Finance (aba Banco, Edge Functions, adapter)\n\nAba \"Banco\" que conecta contas via Pluggy Connect (widget WKWebView) e\nimporta transacoes para a tabela `transaction` do app.\n\nBackend (supabase/):\n- Edge Function pluggy-webhook: recebe eventos, responde 2XX rapido e\n  sincroniza item/contas/transacoes via API da Pluggy (GET /v2/transactions\n  com paginacao por cursor). Tabelas pluggy_* com RLS; grants explicitos\n  para service_role; policies de SELECT para authenticated + is_approved().\n- Edge Function pluggy-connect-token: troca clientId/clientSecret ->\n  connectToken no servidor (verify_jwt + is_approved()). As credenciais da\n  Pluggy e o segredo do webhook ficam so em `supabase secrets` — nada de\n  PLUGGY_* vai no app (Info.plist / Environment / xcconfig limpos).\n- security_check.sql: audita RLS/grants/is_approved() (read-only).\n\nApp:\n- BankConnectViewModel chama functions.invoke(\"pluggy-connect-token\").\n- Adapter Pluggy -> Domain (FinancialApp/Services/Pluggy/Adapter/):\n  PluggyTransaction (DTO), PluggyTransactionMapper (description->title,\n  amount->value com sinal cru, date tz-aware, categoria \"Open Finance\"\n  resolvida por titulo, id = transactionId para idempotencia),\n  PluggySyncService (le pluggy_transaction, pula ja importadas, insere).\n- Import disparado no onItemCreated e no pull-to-refresh da lista.\n- FinancialAppCLI: alvo de teste local que mantem o PluggyClient nativo\n  (removido do target do app).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_016nJZ3NtuKQ32RSmhNTDnfo\n"
+          "size": 2059981,
+          "localizedDescription": "Build: feat: planejamento por categoria, barra de resumo do mes e filtros por chip\n\n- Planejamento mensal por categoria (planned_amount): telas de planejamento\n  e de detalhe do mes, RingGaugeView, Category.plannedAmount + CategoryDTO\n- MonthSummaryView: resumo do recorte acima da lista\n  (entradas/saidas/saldo em Transacoes; real/estimado/diferenca em Contas)\n- ChipFilterBar: filtro por categoria e por carteira na aba Transacoes\n- Contas: composicao do valor real expansivel inline na celula\n- Ajustes nos adapters Pluggy (alias de categoria/carteira) e no Bank connect\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01N3qFQfQgFNddcutD1enfKG\n"
         }
       ]
     }
