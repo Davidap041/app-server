@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.9.0",
-          "date": "2026-09-10",
+          "version": "1.9.1",
+          "date": "2026-09-21",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 2101297,
-          "localizedDescription": "Build: feat: excluir categoria na lista e build Mac Catalyst no deploy\n\n- CategoryListViewController: acao \"Excluir categoria\" no action sheet da celula\n- Fastfile: apos o deploy iOS, roda install_mac_lane em begin/rescue proprio para\n  que falha de assinatura (conta gratis) nao derrube um deploy iOS ja publicado\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01N3qFQfQgFNddcutD1enfKG\n"
+          "size": 2114858,
+          "localizedDescription": "Build: deploy app for version 1.9.0\n"
         }
       ]
     }
