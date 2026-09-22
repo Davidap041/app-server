@@ -27,11 +27,11 @@
       "iconURL": "https://davidap041.github.io/app-server/FinancialApp.png",
       "versions": [
         {
-          "version": "1.9.1",
-          "date": "2026-09-21",
+          "version": "1.10.0",
+          "date": "2026-09-22",
           "downloadURL": "https://davidap041.github.io/app-server/FinancialApp.ipa",
-          "size": 2114858,
-          "localizedDescription": "Build: deploy app for version 1.9.0\n"
+          "size": 2118068,
+          "localizedDescription": "Build: feat: melhorias em Bills e Planejamento\n\n- Bills: Enter (Catalyst) abre novo lançamento; foco automático no título;\n  soma real de bills de cartão normalizada (abs), corrige mistura de sinal\n  com bills sem carteira; editar/excluir por menu de contexto (long-press/\n  clique direito) além do swipe.\n- Bills: opção \"Acompanhar real\" por conta (com carteira vinculada) — o\n  valor estimado passa a espelhar a soma das transações da fatura.\n- Planejamento: \"copiar previstos do mês anterior\" agora também traz as\n  transações reais do mês anterior como gastos previstos, além dos\n  previstos já registrados.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>\n"
         }
       ]
     }
